@@ -1,0 +1,11 @@
+'''
+Crie um programa que leia o nome de uma pessoa
+e diga se ela tem "Silva" no nome
+'''
+
+nome = input('Nome:').strip()
+
+r = 'silva' in nome.lower()
+
+print(r)
+

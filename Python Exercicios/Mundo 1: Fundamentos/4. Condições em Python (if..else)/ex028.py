@@ -7,11 +7,15 @@ A saida é se o usuario ganhou ou perdeu
 '''
 
 import random
-pc = random.randrange(0, 5)
+import time
 
-n = int(input('Escolha um número de 0 a 5: '))
+pc = random.randrange(0, 5)
+print('Estou pensando num número...')
+time.sleep(2)
+
+n = int(input('Que número eu pensei? de 0 a 5: '))
 
 if n == pc:
-    print('Ganhou')
+    print('Ganhou!!')
 else:
-    print('Perdeu')
+    print('Perdeu, pensei no número {}'.format(pc))

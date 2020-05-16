@@ -13,6 +13,6 @@ b = float(input())
 c = float(input())
 
 if abs(a - b) < c < a + b and abs(a - c) < b < a + c and abs(b - c) < a < b + c:
-    print('Forma triangulo')
+    print('\033[34mForma triangulo')
 else:
-    print('Não forma triangulo')
+    print('\033[31mNão forma triangulo')

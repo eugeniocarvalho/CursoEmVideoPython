@@ -17,7 +17,7 @@ if abs(a - b) < c < a + b and abs(a - c) < b < a + c and abs(b - c) < a < b + c:
         print('Triângulo Equilatero')
     elif a == b or a == c or b == c:
         print('Triangulo Isoceles')
-    elif a != b and a != c and b != c:
+    else:
         print('Triangulo Escaleno')
 else:
     print('\033[31mNão forma triangulo')

@@ -27,4 +27,5 @@ elif pagamento == 2:
 elif pagamento == 3:
     print('Valor a pagar: {:.2f}R$'.format(produto))
 elif pagamento == 4:
-    print('Valor a pagar: {:.2f}R$'.format(produto + (produto/100 * x)))
+    produto += produto * 0.2
+    print('Valor a pagar: {:.2f}R$'.format(produto))

@@ -7,12 +7,14 @@ Faça um programa que leia o ano de nascimento de um jovem e informe, de acordo 
 Seu programa também deverá mostrar o tempo que falta ou que passou do prazo
 '''
 
+from datetime import date
 
-idade = int(input())
+ano = int(input())
+data = date.today().year
 
-if idade < 18:
+if data - ano < 18:
     print('Você ainda vai se alistar')
-elif idade < 45:
+elif data - ano < 45:
     print('É hora de se alistar')
 else:
     print('Passou do prazo')

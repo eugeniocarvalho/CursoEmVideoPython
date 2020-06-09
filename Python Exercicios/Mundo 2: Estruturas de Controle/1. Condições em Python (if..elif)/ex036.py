@@ -11,4 +11,10 @@ valCasa = float(input('Valor da casa: '))
 salario = float(input('Salário do comprador: '))
 ano = int(input('Anos para pagar: '))
 
+anoMeses = ano * 12
+valorMes = valCasa / anoMeses
 
+if (valorMes * 100) / salario < 30:
+    print('Tudo ok para a compra')
+else:
+    print('O valor da prestação excedeu 30%')

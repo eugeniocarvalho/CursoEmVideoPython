@@ -14,7 +14,7 @@ for i in range(5):
     if peso >= maior:
         maior = peso
 
-    else:
+    if peso < menor:
         menor = peso
 
 print('Maior peso: {}'.format(maior))

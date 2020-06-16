@@ -8,5 +8,7 @@ an = a1 + (n – 1)r
 a1 = int(input())
 r = int(input())
 
-for i in range(1, 10):
-    print(a1 + (i - 1) * r)
+for i in range(1, 11):
+    print('{}'.format(a1 + (i - 1) * r), end=' ➔ ')
+
+print('Acabou')

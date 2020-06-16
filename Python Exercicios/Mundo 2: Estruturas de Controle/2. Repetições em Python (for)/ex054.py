@@ -12,7 +12,7 @@ maior = 0
 for i in range(7):
     ano = int(input())
 
-    if atual - ano < 18:
+    if atual - ano < 21:
         menor +=1
     else:
         maior +=1

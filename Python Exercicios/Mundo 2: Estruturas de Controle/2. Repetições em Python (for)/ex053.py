@@ -2,9 +2,13 @@
 Crie um programa que leia uma frase qualquer e diga se ela é um palindromo, desconsiderando os espaços
 '''
 
-frase = input().strip()
-j = len(frase) - 1
+temp = input().strip()
 
+temp = temp.split(' ')
+
+frase = ''.join(temp)
+
+j = len(frase) - 1
 i = 0
 
 for i in range(len(frase)):

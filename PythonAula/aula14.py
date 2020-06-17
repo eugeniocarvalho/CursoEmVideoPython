@@ -17,6 +17,7 @@ print('Fim')
 p = i = 0
 n = 1
 
+
 while n:
     n = int(input('Digite um numero: '))
 

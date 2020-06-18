@@ -33,3 +33,5 @@ while n != 5:
     elif n == 4:
         n1 = int(input())
         n2 = int(input())
+    else:
+        print('Opção invalida, tente novamente')

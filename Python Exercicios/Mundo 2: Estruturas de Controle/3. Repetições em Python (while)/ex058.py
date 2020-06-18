@@ -21,7 +21,7 @@ time.sleep(2)
 n = int(input('Que número eu pensei? de 0 a 10: '))
 num = 1
 while n != pc:
-    print('Não foi esse')
+    print('Não foi esse. ', end='')
     num += 1
     n = int(input('Que número eu pensei? de 0 a 10: '))
 

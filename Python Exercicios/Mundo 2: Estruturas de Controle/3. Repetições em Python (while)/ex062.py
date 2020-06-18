@@ -13,13 +13,20 @@ o programa encerra quando ele disser que quer mostrar 0 termos
         an = a1 + (n – 1)r
 '''
 
-i = n = 1
+termo = 10
+i = 1
+n = 0
+a1 = int(input())
+r = int(input())
 
-while n != 0:
-    a1 = int(input())
-    r = int(input())
-    print('{}'.format(a1 + (i - 1) * r), end=' ➔ ')
-    i += 1
-    n = int(input('Mostrar mais termos? '))
+while termo != 0:
+    n += termo
+
+    while i <= n:
+        print('{}'.format(a1 + (i - 1) * r), end=' ➔ ')
+        i += 1
+
+    print('PAUSA')
+    termo = int(input('Mostrar mais termos? '))
 
 print('Acabou')

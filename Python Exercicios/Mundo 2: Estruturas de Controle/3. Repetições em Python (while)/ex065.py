@@ -5,9 +5,10 @@ O programa deve perguntar ao usuario se ele quer ou nao continuar a digitar valo
 '''
 
 cont = sum = 0
-c = 1
+c = 'S'
 maior = menor = 0
-while c:
+
+while c == 'S':
     n = int(input())
     if cont == 0:
         menor = n
@@ -16,10 +17,10 @@ while c:
         maior = n
 
     if n < menor:
-        menor = menor
+        menor = n
 
     cont += 1
     sum += n
-    c = int(input())
+    c = input('Quer continuar? (s/n) ').upper()
 
 print('Media: {}, maior: {}, menor: {}'.format(sum/cont, maior, menor))

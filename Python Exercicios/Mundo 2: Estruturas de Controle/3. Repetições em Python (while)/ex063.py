@@ -9,8 +9,10 @@ a = f = i = 0
 b = 1
 
 while i < n:
-    print(f, end=' ')
+    print(f, '→ ', end='')
     f = a + b
     b = a
     a = f
     i += 1
+
+print('FIM')

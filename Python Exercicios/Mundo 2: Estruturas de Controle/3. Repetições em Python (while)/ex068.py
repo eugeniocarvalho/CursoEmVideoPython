@@ -8,11 +8,14 @@ from random import randrange
 num = 0
 
 while True:
-    player = int(input())
+    player = int(input('Escolha um numero: '))
     pc = randrange(10)
 
-    opcao = input('Par ou Impar? P/I: ').upper()
+    opcao = ' '
     print(f'Você jogou {player} e o computador jogou {pc}')
+
+    while opcao not in 'PI':
+        opcao = input('Par ou Impar? P/I: ').upper().split()[0]
 
     if opcao == 'P':
         if (player + pc) % 2 == 0:
@@ -21,7 +24,8 @@ while True:
         else:
             print('Você perdeu :/')
             break
-    elif opcao == 'I':
+
+    if opcao == 'I':
         if (player + pc) % 2 != 0:
             print('Voccê ganhou!!')
             num += 1

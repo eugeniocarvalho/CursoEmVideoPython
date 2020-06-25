@@ -23,7 +23,14 @@ while sacar:
     d = sacar // 1
     sacar %= 1
 
-print(f'{a} notas de R$ 50,00')
-print(f'{b} notas de R$ 20,00')
-print(f'{c} notas de R$ 10,00')
-print(f'{d} notas de R$ 1,00')
+if a > 0:
+    print(f'{a} notas de R$ 50,00')
+
+if b > 0:
+    print(f'{b} notas de R$ 20,00')
+
+if c > 0:
+    print(f'{c} notas de R$ 10,00')
+
+if d > 0:
+    print(f'{d} notas de R$ 1,00')

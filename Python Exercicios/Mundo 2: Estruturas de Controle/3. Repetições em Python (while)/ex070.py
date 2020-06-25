@@ -12,7 +12,7 @@ barato = ''
 
 while True:
     nome = input('Nome do produto: ')
-    preco = float(input('Preço: '))
+    preco = float(input('Preço: R$ '))
 
     if preco > 1000:
         qtd += 1
@@ -34,4 +34,4 @@ while True:
 
 print(f'Total gasto de R$ {total:.2f}')
 print(f'{qtd} produtos custam mais de R$ 1000,00')
-print(f'O produto mais barato é {barato}, que custa {menor:.2f}')
+print(f'O produto mais barato é {barato}, que custa R$ {menor:.2f}')

@@ -8,7 +8,7 @@ digitados e qual foi a soma entre eles
 sum = total = 0
 
 while True:
-    n = int(input())
+    n = int(input('(999 para parar) '))
 
     if n == 999:
         break

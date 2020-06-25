@@ -6,6 +6,17 @@ Depois disso, mostre a listagem e numeros gerados e tambem indique o menor e o m
 
 from random import randint
 
-num = (randint(5))
+nums = (randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10))
 
-print(num)
+maior = menor = nums[0]
+
+for i in nums:
+    if i > maior:
+        maior = i
+
+    if i < menor:
+        menor = i
+
+print(f'Números gerados: {nums}')
+print(f'Maior {maior}')
+print(f'Menor {menor}')

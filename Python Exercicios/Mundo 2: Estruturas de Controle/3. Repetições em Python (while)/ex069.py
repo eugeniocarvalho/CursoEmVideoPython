@@ -7,3 +7,27 @@ se o usuario quer ou nao continuar. No final, mostre:
     B. quantos homens foram cadastrados
     C. Quantas mulheres tem menos de 20 anos
 '''
+
+i = j = k = 0
+
+while True:
+    idade = int(input('Idade: '))
+    sexo = input('Sexo: M/F ').upper()
+
+    if idade >= 18:
+        i += 1
+
+    if sexo == 'M':
+        j += 1
+
+    if sexo == 'F' and idade < 20:
+        k += 1
+
+    opcao = input('Quer continuar? S/N ').upper()
+
+    if opcao != 'S':
+        break
+
+print(f'Existem {i} pessoas maiores de 18 anos')
+print(f'{j} homens foram cadastrados')
+print(f'Existe {k} mulheres menores de 20 anos')

@@ -5,15 +5,15 @@ Desenvolva um programa que leia quatro valores pelo teclado e guarde-os em uma t
     c. quais foram os numeros pares
 '''
 
-n1 = int(input())
-n2 = int(input())
-n3 = int(input())
-n4 = int(input())
-
-tupla = (n1, n2, n3, n4)
+tupla = (int(input()), int(input()), int(input()), int(input()))
 
 print(f'O valor 9 apareceu {tupla.count(9)} vezes')
-print(f'O valor 3 esta na {tupla.index(3) + 1}º posição')
+
+if 3 in tupla:
+    print(f'O valor 3 esta na {tupla.index(3) + 1}º posição')
+else:
+    print('O valor 3 nao foi digitado')
+
 print('Números pares: ', end='')
 
 for i in tupla:

@@ -8,9 +8,19 @@ numeros = (
 'zero', 'um', 'dois', 'trẽs', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez', 'onze', 'doze', 'treze',
 'cartoze', 'quinze', 'dezessseis', 'dezessete', 'dezoito', 'dezenove', 'vinte')
 
-n = int(input('Digite um numero [0:20]: '))
-
-while n not in range(0, 21):
+while True:
     n = int(input('Digite um numero [0:20]: '))
 
-print(f'Você digitou o numero {numeros[n]}')
+    while n < 0 or n > 20:
+        n = int(input('Digite um numero [0:20]: '))
+
+    print(f'Você digitou o numero {numeros[n]}')
+
+    i = input('Quer continuar? S/N').strip().upper()[0]
+
+    while i not in 'SN':
+        i = input('Quer continuar? S/N ').strip().upper()[0]
+
+    if i == 'N':
+        break
+

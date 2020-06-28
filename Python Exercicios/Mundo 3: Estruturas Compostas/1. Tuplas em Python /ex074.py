@@ -10,13 +10,6 @@ nums = (randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10), randint(
 
 maior = menor = nums[0]
 
-for i in nums:
-    if i > maior:
-        maior = i
-
-    if i < menor:
-        menor = i
-
 print(f'Números gerados: {nums}')
-print(f'Maior {maior}')
-print(f'Menor {menor}')
+print(f'Maior {max(nums)}')
+print(f'Menor {min(nums)}')

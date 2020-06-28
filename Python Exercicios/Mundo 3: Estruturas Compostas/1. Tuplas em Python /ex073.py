@@ -17,10 +17,4 @@ times = (
 print(f'Os cinco primeiros: {times[:5]}')
 print(f'Os ultimos 4 colocados: {times[-4:]}')
 print(f'Lista em ordem Alfabetica: {sorted(times)}')
-
-for p, c in enumerate(times):
-    if c == 'Flamengo':
-        pos = p
-        break
-
-print(f'Flamengo ta na {pos+1}ª posição')
+print(f'Flamengo ta na {times.index("Flamengo") + 1}ª posição')
